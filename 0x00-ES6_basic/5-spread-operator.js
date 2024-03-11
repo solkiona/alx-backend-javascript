@@ -1,9 +1,3 @@
-export default function concatArrays(...arrayandstring) {
-
-    // return arrayandstring.flatMap((item)=>Array.isArray(item)? item: (typeof item === 'string' ? item.split('') : []));
-    
-    return arrayandstring
-
-      
-
+export default function concatArrays(array1, array2, string) {
+    return [ ...array1, ...array2, ...string ]
 }
